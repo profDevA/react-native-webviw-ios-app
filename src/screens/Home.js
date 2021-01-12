@@ -12,7 +12,7 @@ const Home = () => {
             const res2 = await request(PERMISSIONS.IOS.CAMERA);
             console.log('Camera:',res2)
         }
-        
+
         const res3 = await check(PERMISSIONS.IOS.MICROPHONE);
         if (res3 === RESULTS.GRANTED) {
             console.log('Micropnone:', RESULTS.GRANTED);
